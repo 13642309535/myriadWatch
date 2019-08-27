@@ -1,7 +1,10 @@
 .main3 .content {
   width: 1200px;
-  height: 420px;
   margin: auto;
+}
+
+.main3 .content h3 {
+  text-align: left;
 }
 
 .main3 .content h3 span {
