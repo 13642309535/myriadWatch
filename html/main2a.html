@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="referrer" content="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>main3</title>
+    <link rel="stylesheet" href="http://127.0.0.1/myriadWatch/css/base.css">
+    <link rel="stylesheet" href="http://127.0.0.1/myriadWatch/css/mian2.css">
+    <script src="http://127.0.0.1/myriadWatch/js/jquery-3.4.1.js"></script>
+
+    <!-- 轮播图4-->
+    <script src="http://127.0.0.1/myriadWatch/js/swiper4_data.js"></script>
+    <script src="http://127.0.0.1/myriadWatch/js/swiper4.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1/myriadWatch/css/swiper4.css" />
+
+
+</head>
+
+<body>
+    <div class="main2">
+        <div class="top">
+            <h2>二手拍卖</h2>
+            <a href="#">查看更多></a>
+        </div>
+        <div class="bottom">
+            <a href="#"><img
+                    src="//image8.wbiao.co/mall/9985edc1bd1446039970cc17ea4e7d91.jpg?x-oss-process=image/resize,w_392"
+                    alt="">
+                <div class="text2">
+                    <p class="p1">2.5折起二手卡地亚竞拍捡漏</p>
+                    <p class="p2">蓝气球/山度士/钥匙/Tank</p>
+                </div>
+            </a>
+            <div id="swiper4" class="fl">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 引入倒计时函数 -->
+    <script src="http://127.0.0.1/myriadWatch/js/timer2.js"></script>
+
+    <!-- 轮播图 -->
+    <script>
+        // 轮播图4
+        var oswiper4 = document.querySelector("#swiper4");
+        new swiper4(swiper4_data, oswiper4).init();
+
+        $(".timer2").each(function name(index, item) {
+
+            timer2($(this).attr("data_time"), index);
+
+
+        })
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

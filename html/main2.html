@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>main2</title>
+    <link rel="stylesheet" href="http://127.0.0.1/myriadWatch/css/base.css">
+    <link rel="styleshee t" href="http://127.0.0.1/myriadWatch/css/mian2.css">
+    <script src="http://127.0.0.1/myriadWatch/js/jquery-3.4.1.js"></script>
+
+    <!-- 轮播图2-->
+    <script src="http://127.0.0.1/myriadWatch/js/swiper2_data.js"></script>
+    <script src="http://127.0.0.1/myriadWatch/js/swiper2.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1/myriadWatch/css/swiper2.css" />
+
+    <!-- 轮播图3-->
+    <script src="http://127.0.0.1/myriadWatch/js/swiper3.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1/myriadWatch/css/swiper3.css" />
+
+</head>
+
+<body>
+    <div class="main2">
+        <div class="top">
+            <h2>限时购</h2>
+            <div id="timer" class="fl">
+                <span class="span1">距离本期结束</span>
+                <span class="span2" id="spanD"></span> <span class="span3">天</span>
+                <span class="span2" id="spanH"></span> <span class="span3">时</span>
+                <span class="span2" id="spanM"></span> <span class="span3">分</span>
+                <span class="span2" id="spanS"></span> <span class="span3">秒</span>
+            </div>
+            <a href="#">查看更多></a>
+        </div>
+        <div class="bottom">
+            <a href="#">
+                <img src="https://image8.wbiao.co/mall/138302509232441c9a812a1ccc980f50.jpeg?x-oss-process=image/resize,w_392"
+                    alt="">
+                <div class="text2">
+                    <p class="p1">万国、欧米茄 正品大牌 2.5折起</p>
+                    <p class="p2">万表闪购 比专柜买更划算</p>
+                </div>
+
+            </a>
+
+
+            <div id="swiper2" class="fl">
+            </div>
+
+            <div id="swiper3" class="fl">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 倒计时 -->
+    <script src="http://127.0.0.1/myriadWatch/js/timer.js"></script>
+
+    <!-- 轮播图 -->
+    <script>
+        // 轮播图2
+        var oswiper2 = document.querySelector("#swiper2");
+        new swiper2(swiper2_data, oswiper2).init();
+
+        // 轮播图3
+        let swiper3_data = [
+            "//image8.wbiao.co/mall/9a3a0f5f9a674646a916044e4210590b.jpg?x-oss-process=image/resize,w_142",
+            "//image8.wbiao.co/mall/8401af51017c468fa0c7580ef1ffcaec.jpg?x-oss-process=image/resize,w_142",
+            "//image8.wbiao.co/mall/cb6d987b666941b386d32dacf273ecda.jpg?x-oss-process=image/resize,w_142",
+            "//image8.wbiao.co/mall/0cc895babffc4c498bbfba6227b9f78c.jpg?x-oss-process=image/resize,w_142",
+            "//image8.wbiao.co/mall/951314c62bb04248969c99a3d4eaf7b8.jpg?x-oss-process=image/resize,w_142"
+        ]
+        var oswiper2 = document.querySelector("#swiper3");
+        new swiper3(swiper3_data, oswiper2).init();
+    </script>
+
+
+
+
+</body>
+
+</html>

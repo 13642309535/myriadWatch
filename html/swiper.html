@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>swiper</title>
+	<link rel="stylesheet" type="text/css" href="http://127.0.0.1/myriadWatch/css/swiper.css" />
+	<script src="http://127.0.0.1/myriadWatch/js/jquery-3.4.1.js"></script>
+	<script src="http://127.0.0.1/myriadWatch/js/swiper.min.js"></script>
+	<style type="text/css">
+		/* -----------------------------------最大的容器 ---------------------------------------------------- */
+
+		.swiper-container {
+			width: 100%;
+			height: 460px;
+			background: #ccc;
+		}
+
+
+		.swiper-slide img {
+			width: 100%;
+			height: 460px;
+		}
+
+
+		/* --------------------------分页------------------------------- */
+
+		/* 分页容器大小和位置 */
+		/* Common Styles */
+		.swiper-pagination-fraction,
+		.swiper-pagination-custom,
+		.swiper-container-horizontal>.swiper-pagination-bullets {
+			width: 100%;
+			height: 10px;
+			/* bottom: 50px; */
+			left: 0;
+		}
+
+		/* 分页容器 */
+		.swiper-pagination {
+			/* text-align: center; */
+			padding-left: 500px;
+			bottom: 40px;
+		}
+
+		/* 分页元素 */
+		.swiper-pagination-bullet {
+			/* width: 10px;
+			height: 10px;
+			line-height: 10px;
+			background: #666; */
+
+			/* 字体,不显示字体值为0 */
+			/* font-size: 0px;
+			color: #fff;
+			text-align: center;
+			display: inline-block; */
+			vertical-align: middle;
+			height: 6px;
+			width: 6px;
+			margin: 0 5px;
+			border-radius: 50%;
+			border: 2px solid #fff;
+			text-indent: -9999px;
+			opacity: .5;
+			background: 0 0;
+		}
+
+		/* 活动中的分页 */
+		.swiper-pagination-bullet-active {
+			width: 8px;
+			height: 8px;
+			border: 3px solid #ccaa7a;
+			opacity: 1;
+			background-color: #fff;
+		}
+
+		/* 分页元素间距 */
+		.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+			margin: 0 4px;
+		}
+
+
+		/* ----------------------------------------按钮----------------------------------------- */
+
+		.swiper-button-prev,
+		.swiper-button-next {
+			/* 是否显示按钮 */
+			/* display: none; */
+			position: absolute;
+
+			/* 按钮上下位置 */
+			top: 50%;
+
+			/* 按钮大小 */
+			transform: scale(1);
+			background-size: 27px 44px;
+
+			/* 按钮容器 */
+			width: 15%;
+			height: 15%;
+			margin-top: -22px;
+			z-index: 10;
+			cursor: pointer;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		.swiper-button-prev,
+		.swiper-container-rtl .swiper-button-next {
+			/* 左按钮图片 */
+			display: block;
+			background-image: url(http://127.0.0.1/myriadWatch/images/d.png);
+			background-position: -234px -114px;
+			background-size: 475px;
+			width: 36px;
+			height: 60px;
+
+			/* 左按钮左边距 */
+			left: 280px;
+			right: auto;
+		}
+
+		.swiper-button-next,
+		.swiper-container-rtl .swiper-button-prev {
+			/* 右按钮图片 */
+			background-image: url(http://127.0.0.1/myriadWatch/images/d.png);
+			display: block;
+			background-position: -142px -114px;
+			background-size: 475px;
+			width: 36px;
+			height: 60px;
+
+			/* 右按钮左边距,值同左按钮*/
+			right: 100px;
+			left: auto;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="swiper-container" id="swiper-container">
+		<!-- 所有元素的大盒子 -->
+		<div class="swiper-wrapper">
+
+
+		</div>
+		<!--按钮-->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<!--分页-->
+		<div class="swiper-pagination"></div>
+	</div>
+
+
+	<script type="text/javascript">
+		var s1 = new Swiper('.swiper-container', {
+			autoplay: { //自动轮播+延时两秒
+				delay: 2000,
+				disableOnInteraction: false
+			},
+			loop: true, //无缝回路轮播
+			speed: 500, //切换速度
+			navigation: { //上下按钮
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			pagination: { //焦点跟随
+				el: '.swiper-pagination',
+				clickable: true, //点击焦点跳到指定图片
+				renderBullet: function (index, className) {
+					return '<span class="' + className + '">' + (index + 1) + '</span>'; //生成焦点数字
+				}
+			},
+			mousewheel: true //滚动滑轮可以切图
+
+		});
+
+		var oBox = document.getElementById('swiper-container');
+
+		oBox.onmouseover = function () { //鼠标经过停止
+			s1.autoplay.stop();
+		}
+
+		oBox.onmouseout = function () { //鼠标经过离开
+			s1.autoplay.start();
+		}
+
+
+
+		var arrSwiper = [
+			"https://image8.wbiao.co/mall/af2f25e3b0f7461395fc504ae5dccb79.png",
+			"https://image8.wbiao.co/mall/af267d9dd07642b18753e3b8130acc29.jpg",
+			"https://image8.wbiao.co/mall/84b2bee01ee749f7a1917f7ebf17daa4.jpg",
+
+			"https://image8.wbiao.co/mall/683ac016b1bc43a0b4e02af018cad935.jpg",
+			"https://image8.wbiao.co/mall/a388689978514599b2cc9dfff04f233e.jpg",
+			"https://image8.wbiao.co/mall/640635876b4043459e93f1799ce62848.jpg",
+
+			"https://image8.wbiao.co/mall/b78fb25d19f1447f9f1abde3d16de62c.jpg",
+			"https://image8.wbiao.co/mall/69ec057d837d4f239e918a3260ff139b.jpg",
+		]
+
+
+
+		let htmlSwiper = "";
+		arrSwiper.forEach(function name(item, index) {
+			let html = `<div class="swiper-slide  swiper-slide-duplicate"><img src="${item}" alt=""></div>`;
+			htmlSwiper += html;
+
+		})
+
+		$(".swiper-wrapper").html(htmlSwiper);
+	</script>
+
+
+</body>
+
+</html>

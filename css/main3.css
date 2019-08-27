@@ -1,0 +1,128 @@
+.main3 .content {
+  width: 1200px;
+  height: 420px;
+  margin: auto;
+}
+
+.main3 .content h3 span {
+  font-size: 20px;
+  color: #4a4a4a;
+  line-height: 60px;
+  font-weight: 900;
+}
+
+.main3 .content h3 i {
+  font-size: 12px;
+  background-color: #333;
+  color: #f2d291;
+  display: inline-block;
+  width: 72px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.main3 .content .bottom {
+  position: relative;
+}
+
+.main3 .content .bottom .a1 {
+  display: block;
+  float: left;
+  width: 392px;
+  height: 360px;
+  position: relative;
+  margin-right: 12px;
+  overflow: hidden;
+}
+
+.main3 .content .bottom .a1 img {
+  width: 392px;
+  transition: all .5s ease;
+}
+
+.main3 .content .bottom .a1 .text {
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  bottom: 28px;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.main3 .content .bottom .a1 .text .p1 {
+  font-size: 20px;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+
+.main3 .content .bottom .a1 .text .p2 {
+  letter-spacing: 1px;
+}
+
+.main3 .content .bottom .a1 i {
+  width: 100%;
+  height: 110px;
+  position: absolute;
+  bottom: 0;
+  opacity: .6;
+  background-image: linear-gradient(-180deg, transparent 0, #000 100%);
+}
+
+.main3 .content .bottom .a1:hover img {
+  transform: scale(1.1);
+}
+
+.main3 .content .bottom .a1:hover i {
+  opacity: 1;
+}
+
+.main3 .content .bottom .pList a {
+  float: left;
+  display: inline-block;
+  width: 392px;
+  height: 174px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.main3 .content .bottom .pList a:nth-child(odd) {
+  margin-right: 12px;
+}
+
+.main3 .content .bottom .pList a:hover {
+  box-shadow: 0 2px 10px 0 #2e2424;
+}
+
+.main3 .content .bottom .i1 {
+  position: absolute;
+  left: 0px;
+  top: 40%;
+  background-image: url(http://127.0.0.1/myriadWatch/images/d.png);
+  background-position: -142px -184px;
+  background-size: 475px;
+  width: 30px;
+  height: 60px;
+}
+
+.main3 .content .bottom .i1:hover {
+  background-position: -262px -184px;
+}
+
+.main3 .content .bottom .i2 {
+  position: absolute;
+  right: 0px;
+  top: 40%;
+  background-image: url(http://127.0.0.1/myriadWatch/images/d.png);
+  background-position: -302px -184px;
+  background-size: 475px;
+  width: 30px;
+  height: 60px;
+}
+
+.main3 .content .bottom .i2:hover {
+  background-position: -342px -184px;
+}
