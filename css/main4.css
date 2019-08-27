@@ -428,6 +428,10 @@
   background-color: #ccaa7a;
 }
 
+.main4 .content .bottom .ul2 .li2 .ul4 li:hover .pName {
+  display: block;
+}
+
 .main4 .content .bottom .ul2 .li2:nth-child(1) {
   display: block;
 }

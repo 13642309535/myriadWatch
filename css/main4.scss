@@ -395,13 +395,10 @@
 
                             }
                         }
-                        li:hover .pImg1{
+
+                        li:hover .pImg1 {
                             filter: blur(4px);
                         }
-                        // li:hover .divImg{
-                        //     display: block;
-
-                        // }
                     }
 
                     .ul4 {
@@ -452,8 +449,16 @@
                                     background-color: #ccaa7a;
                                 }
                             }
+
+
+                        }
+
+
+                        li:hover .pName {
+                            display: block;
                         }
                     }
+
 
                 }
 

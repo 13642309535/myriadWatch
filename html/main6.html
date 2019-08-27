@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="referrer" content="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>main6</title>
+    <link rel="stylesheet" href="http://127.0.0.1/myriadWatch/css/base.css">
+    <link rel="stylesheet" href="http://127.0.0.1/myriadWatch/css/main6.css">
+
+    <script src="http://127.0.0.1/myriadWatch/js/jquery-3.4.1.js"></script>
+    <script src="http://127.0.0.1/myriadWatch/js/main6_data.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="main6">
+        <div class="content">
+            <h3>猜你喜欢</h3>
+            <div class="list clearfloat">
+
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script>
+    htmlAll = ""
+    $(main6_data).each(function name(index, item) {
+
+        let html = `  <a href="">
+                    <p class="pImg">
+                        <img src="${item.imgSrc}"
+                            alt="">
+                    </p>
+                    <p class="p1">${item.title}</p>
+                    <p class="p2">${item.title2}</p>
+                    <p class="pMoney">
+                        <span class="monthPay">月付</span>
+                        <span class="fenqiPrice">${item.fenqi_price}</span>
+                        <span class="price">${item.price}</span>
+                    </p>
+                </a>`
+        htmlAll += html;
+    })
+    $(".main6 .list").html(htmlAll);
+</script>
+
+</html>

@@ -978,9 +978,6 @@
             </div>
         </div>
 
-
-
-
     </div>
 
 
@@ -1110,7 +1107,7 @@
         // 点击 后退按钮
         $(".bottom2 .i4").click(function name(params) {
             if (index3 == 4) {
-                index3= 0;
+                index3 = 0;
                 // 详情
                 $(".main4 .bottom2  .ul2 .li2").eq(index3).show().siblings().hide();
 
@@ -1129,19 +1126,16 @@
         })
 
 
-     // divImg显示和隐藏
+        // divImg显示和隐藏
 
-            $(".ul3 li").hover(
-            function(){
-                 if($(this).find(".divImg").css("display")=='none'){
+        $(".ul3 li").hover(
+            function () {
+                if ($(this).find(".divImg").css("display") == 'none') {
                     $(this).find(".divImg").fadeIn(500);
-                }else{
+                } else {
                     $(this).find(".divImg").fadeOut(500);
                 }
             });
-        
-
-
     </script>
 
 </body>

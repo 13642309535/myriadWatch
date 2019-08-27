@@ -1,0 +1,197 @@
+.foot {
+  background: #fff;
+  border-top: 1px solid #eee;
+  box-sizing: border-box;
+  height: 70px;
+  font-size: 12px;
+}
+
+.foot .foot1 .content {
+  width: 1200px;
+  margin: auto;
+}
+
+.foot .foot1 .content a {
+  display: block;
+  float: left;
+  width: 240px;
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.foot .foot1 .content a i {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  background-image: url(http://127.0.0.1/myriadWatch/images/a.png);
+  background-size: 589px;
+  width: 38px;
+  height: 38px;
+}
+
+.foot .foot1 .content a .i1 {
+  background-position: -409px -357px;
+}
+
+.foot .foot1 .content a .i2 {
+  background-position: 0 -414px;
+}
+
+.foot .foot1 .content a .i3 {
+  background-position: -361px -357px;
+}
+
+.foot .foot1 .content a .i4 {
+  background-position: -313px -357px;
+}
+
+.foot .foot1 .content a .i5 {
+  background-position: -265px -357px;
+}
+
+.foot .foot2 {
+  background-color: #333;
+}
+
+.foot .foot2 .content {
+  width: 1200px;
+  margin: auto;
+  padding: 44px 0 70px;
+}
+
+.foot .foot2 .content .left .p1 {
+  font-size: 14px;
+  color: #ccaa7a;
+  font-weight: 700;
+  line-height: 19px;
+  margin-bottom: 12px;
+}
+
+.foot .foot2 .content .left .p2 {
+  font-size: 24px;
+  line-height: 31px;
+  color: #ccaa7a;
+}
+
+.foot .foot2 .content .left .p3 span {
+  color: #999;
+  line-height: 16px;
+  font-size: 12px;
+  margin: 0 5px 0 0;
+}
+
+.foot .foot2 .content .left .p4 a {
+  display: block;
+  width: 132px;
+  height: 36px;
+  line-height: 36px;
+  color: #999;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid #999;
+  border-radius: 100px;
+  margin-top: 16px;
+}
+
+.foot .foot2 .content .left .p4 a:hover {
+  background-color: #ccaa7a;
+  color: #fff;
+  border-color: #ccaa7a;
+}
+
+.foot .foot2 .content .middle {
+  width: 520px;
+  margin-left: 122px;
+}
+
+.foot .foot2 .content .middle dl {
+  width: 80px;
+  float: left;
+  margin-right: 24px;
+}
+
+.foot .foot2 .content .middle dl dt {
+  font-size: 14px;
+  color: #ccc;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+
+.foot .foot2 .content .middle dl dd a {
+  display: block;
+  line-height: 28px;
+  color: #999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.foot .foot2 .content .middle dl dd .aColor {
+  color: #ccaa7a;
+}
+
+.foot .foot2 .content .middle dl dd a:hover {
+  color: #fff;
+}
+
+.foot .foot2 .content .middle dl:last-child dt {
+  color: #ccaa7a;
+}
+
+.foot .foot2 .content .right {
+  position: relative;
+  width: 113px;
+  height: 130px;
+  margin-left: 187px;
+  margin-top: -5px;
+  overflow: hidden;
+}
+
+.foot .foot2 .content .right a {
+  color: #666;
+  line-height: 1.5;
+}
+
+.foot .foot2 .content .right a img {
+  max-width: 113px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.foot .foot3 {
+  background-color: #333;
+}
+
+.foot .foot3 .content {
+  width: 1200px;
+  margin: auto;
+}
+
+.foot .foot3 .content .friendLinks {
+  text-align: center;
+}
+
+.foot .foot3 .content .friendLinks a {
+  color: #999;
+  margin: 0 10px;
+  line-height: 20px;
+}
+
+.foot .foot3 .content .friendLinks span {
+  font-size: 14px;
+  cursor: pointer;
+  color: #999;
+  display: inline-block;
+  margin-top: 3px;
+}
+
+.foot .foot3 .content .friendLinks .moreLink {
+  overflow: hidden;
+  height: 16px;
+}
