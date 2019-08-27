@@ -26,6 +26,8 @@
     <div id="main4"></div>
     <div id="main5"></div>
     <div id="main6"></div>
+    <div id="foot"></div>
+
 
 
 </body>
@@ -41,6 +43,8 @@
     $("#main4").load("html/main4.html");
     $("#main5").load("html/main5.html");
     $("#main6").load("html/main6.html");
+    $("#foot").load("html/foot.html");
+
 
 
 
@@ -62,8 +66,11 @@
                 "top": "0",
                 "z-index": "5",
                 "background-image": "url(https://static.wbiao.co/p/pc/images/1/logo-icon-w.png)",
+
                 "background-repeat": "no-repeat",
                 "background-position": " 10px center",
+                "background-color": "rgb(179, 36, 36)"
+
             });
             $("#head4 .a1").text("");
             $("#head4 .a1").append("<i></i>");
@@ -92,9 +99,13 @@
 
         } else {
             $('#head4 .a1').css("position", "static");
-            $('#head4 .a1').css("background-image", "linear-gradient(269deg, #b34747 1%, #cc5252 98%)");
+
             $('#head4 .a1').css("background-color", "#b32424")
+            $('#head4 .a1').css("background-image", "linear-gradient(269deg, #b34747 1%, #cc5252 98%)");
+            $('#head4 .a1').css("background-position", "0% 0%");
             $('#head4 .right').css("position", "static");
+            $('#head4 .right').css("width", "716px");
+
             $("#head4 .a1").text("全部商品");
             $("#head4 .a1").append("<i></i>");
 
@@ -104,6 +115,7 @@
         }
     }
 </script>
+
 
 
 </html>

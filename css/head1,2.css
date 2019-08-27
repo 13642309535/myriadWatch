@@ -6,7 +6,8 @@
 
 }
 
-.content {
+.head1 .content,
+.head2 .content {
     width: 1200px;
     height: 100%;
     margin: auto;
@@ -139,7 +140,7 @@
 
 }
 
-a:hover:not(.a1) {
+.head2 a:hover:not(.a1) {
     text-decoration: underline;
 }
 

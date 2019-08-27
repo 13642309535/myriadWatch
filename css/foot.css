@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .foot {
   background: #fff;
   border-top: 1px solid #eee;
@@ -14,7 +15,7 @@
 .foot .foot1 .content a {
   display: block;
   float: left;
-  width: 240px;
+  width: 20%;
   text-align: center;
   height: 70px;
   line-height: 70px;
@@ -101,6 +102,7 @@
   background-color: #ccaa7a;
   color: #fff;
   border-color: #ccaa7a;
+  text-decoration: none；;
 }
 
 .foot .foot2 .content .middle {
@@ -136,6 +138,7 @@
 
 .foot .foot2 .content .middle dl dd a:hover {
   color: #fff;
+  text-decoration: none；;
 }
 
 .foot .foot2 .content .middle dl:last-child dt {
@@ -171,6 +174,7 @@
 .foot .foot3 .content {
   width: 1200px;
   margin: auto;
+  padding-bottom: 0.5px;
 }
 
 .foot .foot3 .content .friendLinks {
@@ -183,6 +187,10 @@
   line-height: 20px;
 }
 
+.foot .foot3 .content .friendLinks a:hover {
+  color: #fff;
+}
+
 .foot .foot3 .content .friendLinks span {
   font-size: 14px;
   cursor: pointer;
@@ -193,5 +201,79 @@
 
 .foot .foot3 .content .friendLinks .moreLink {
   overflow: hidden;
-  height: 16px;
+  height: 0px;
+  transition: all 0.5s;
+}
+
+.foot .foot3 .content .inform {
+  text-align: center;
+  margin-top: 43px;
+  margin-bottom: 40px;
+  color: #999;
+  line-height: 18px;
+}
+
+.foot .foot3 .content .inform p {
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.foot .foot3 .content .inform p a {
+  text-decoration: none;
+  color: #666;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.foot .foot4 {
+  background-color: #eee;
+  text-align: center;
+}
+
+.foot .foot4 .content {
+  padding: 24px 0 41px;
+}
+
+.foot .foot4 .content .top {
+  text-align: center;
+}
+
+.foot .foot4 .content .top a {
+  display: inline-block;
+  margin: 0 10px;
+  width: 98px;
+  height: 38px;
+  overflow: hidden;
+}
+
+.foot .foot4 .content .top a img {
+  width: 100%;
+}
+
+.foot .foot4 .content .friendLinks {
+  margin-top: 26px;
+}
+
+.foot .foot4 .content .friendLinks a {
+  color: #999;
+  margin: 0 10px;
+  line-height: 20px;
+}
+
+.foot .foot4 .content .friendLinks a:hover {
+  color: #ccc;
+}
+
+.foot .foot4 .content .friendLinks span {
+  font-size: 14px;
+  cursor: pointer;
+  color: #999;
+  display: inline-block;
+  margin-top: 3px;
+}
+
+.foot .foot4 .content .friendLinks .moreLink {
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.5s;
 }
