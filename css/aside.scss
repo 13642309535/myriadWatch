@@ -1,20 +1,24 @@
 .aside {
-    font-size: 12px;
     position: fixed;
-    width: 44px;
-    height: 100%;
-    z-index: 85;
     right: 0;
-    bottom: 100px;
-    transition: right .3s cubic-bezier(.25, .46, .45, .94);
+    bottom: 0;
+    font-size: 12px;
+    z-index: 85;
+    height: 100%;
+
 
 
     .left {
+        padding-top: 240px;
+        width: 44px;
+        height: 100%;
+        position: relative;
+        transition: right .3s cubic-bezier(.25, .46, .45, .94);
+        float: left;
+
         .talk {
-            position: relative;
-            top: 220px;
-            right: 0;
             width: 100%;
+            position: relative;
 
             .a1 {
                 position: relative;
@@ -143,8 +147,9 @@
 
         .aside2 {
             position: absolute;
-            bottom: -55px;
-            right: 0;
+            left: 0;
+            bottom: 346px;
+
             width: 100%;
             box-shadow: 0 0 8px 1px rgba(0, 0, 0, .1);
 
@@ -281,8 +286,256 @@
         }
 
     }
-    .right{
-        
+
+    .right {
+        // display: none;
+        // width: 260px;
+        height: 100%;
+        background: #f1f1f1;
+        transition: right .3s cubic-bezier(.25, .46, .45, .94);
+        z-index: 99;
+        border-left: 2px solid #333;
+        float: left;
+
+
+        .floor1 {
+            display: none;
+            // position: absolute;
+            width: 260px;
+            height: 100%;
+            background: #f1f1f1;
+            transition: right .3s cubic-bezier(.25, .46, .45, .94);
+            z-index: 99;
+
+            .top {
+                height: 48px;
+                line-height: 48px;
+                background: #fff;
+                padding: 0 10px;
+                border-bottom: 1px solid #ddd;
+
+                b {
+                    font-size: 14px;
+                    color: #333;
+                    float: left;
+                }
+
+                i {
+
+                    float: right;
+                    display: inline-block;
+                    cursor: pointer;
+                    margin-top: 14px;
+                    background-image: url(http://127.0.0.1/myriadWatch/images/a.png);
+                    background-position: -97px -504px;
+                    background-size: 589px;
+                    width: 17px;
+                    height: 16px;
+                }
+
+            }
+
+            .middle {
+                height: 32px;
+                line-height: 32px;
+                padding: 0 12px;
+                background: #fff9ce;
+                color: #666;
+
+                span {
+                    float: left;
+                }
+
+                a {
+                    color: #477db3;
+                    line-height: 32px;
+                    float: right;
+                }
+
+            }
+
+            .bottom {
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                text-align: center;
+                color: #666;
+
+                i {
+                    display: block;
+                    background-image: url(http://127.0.0.1/myriadWatch/images/a.png);
+                    background-position: 0 -296px;
+                    background-size: 589px;
+                    width: 55px;
+                    height: 51px;
+                    margin: 0 auto 23px;
+                }
+
+            }
+
+        }
+
+        .floor2 {
+            display: none;
+
+            right: 0;
+            // position: absolute;
+            width: 260px;
+            height: 100%;
+            background: #f1f1f1;
+            transition: right .3s cubic-bezier(.25, .46, .45, .94);
+            z-index: 99;
+
+            .top {
+                position: relative;
+                padding: 0 12px;
+                background: #fff;
+                border-bottom: 1px solid #ddd;
+
+                ul {
+                    border-bottom: 0;
+                    width: 100%;
+                    overflow: hidden;
+                    background: #fff;
+                    display: flex;
+
+                    li {
+                        height: 48px;
+                        line-height: 48px;
+                        margin-right: 20px;
+                        display: block;
+                        float: left;
+                        text-align: center;
+
+                        a {
+                            font-weight: 700;
+                            line-height: 45px;
+                            font-size: 14px;
+                            display: inline-block;
+                            color: #666;
+                        }
+
+                        .active {
+                            color: #000;
+                            border-bottom: 3px solid #000;
+                            font-weight: 900;
+                        }
+                    }
+                }
+
+                i {
+                    position: absolute;
+                    top: 16px;
+                    right: 12px;
+                    cursor: pointer;
+                    display: block;
+                    background-image: url(http://127.0.0.1/myriadWatch/images/a.png);
+                    background-position: -97px -504px;
+                    background-size: 589px;
+                    width: 17px;
+                    height: 16px;
+                    float: right;
+                }
+            }
+
+            .middle {
+                height: 32px;
+                line-height: 32px;
+                padding: 0 12px;
+                background: #fff9ce;
+                color: #666;
+
+                span {
+                    float: left;
+                }
+
+                a {
+                    color: #477db3;
+                    line-height: 32px;
+                    float: right;
+
+                }
+            }
+
+            .bottom {
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                text-align: center;
+                color: #666;
+            }
+        }
+
+        .floor3 {
+            display: none;
+
+            // position: absolute;
+            right: 0;
+            width: 260px;
+            height: 100%;
+            background: #f1f1f1;
+            transition: right .3s cubic-bezier(.25, .46, .45, .94);
+            z-index: 99;
+
+            .top {
+                height: 48px;
+                line-height: 48px;
+                background: #fff;
+                padding: 0 10px;
+                border-bottom: 1px solid #ddd;
+
+                b {
+                    font-size: 14px;
+                    color: #333;
+                    float: left;
+                }
+
+                i {
+                    display: inline-block;
+                    cursor: pointer;
+                    margin-top: 14px;
+                    background-image: url(http://127.0.0.1/myriadWatch/images/a.png);
+                    background-position: -97px -504px;
+                    background-size: 589px;
+                    width: 17px;
+                    height: 16px;
+                    float: right;
+
+                }
+            }
+
+            .middle {
+                height: 32px;
+                line-height: 32px;
+                padding: 0 12px;
+                background: #fff9ce;
+                color: #666;
+
+                span {
+                    float: left;
+                }
+
+                a {
+                    color: #477db3;
+                    line-height: 32px;
+                    float: right;
+                }
+            }
+
+            .bottom {
+                span {
+                    width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    text-align: center;
+                    color: #666;
+                }
+
+            }
+        }
     }
 
 }

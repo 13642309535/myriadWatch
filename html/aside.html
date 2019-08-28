@@ -13,7 +13,7 @@
 
 <body>
 
-    <div class="aside">
+    <div class="aside clearfloat">
         <div class="left">
             <div class="talk">
                 <a class="a1" href=""></a>
@@ -29,34 +29,34 @@
                     </div>
                     <div class="detail2">
                         <a class="a2" href="">选表咨询</a>
-                        <a href="">手表维修</a>
+                        <a href="#">手表维修</a>
                     </div>
 
                 </div>
             </div>
             <div class="aside2">
-                <a href="">
+                <a class="aChange" href="#">
                     <i class="i1"></i>
                     <i class="i2"></i>
                     <em></em>
                     <span>购物车</span>
                 </a>
                 <!--  -->
-                <a href="">
+                <a class="aChange" href="#">
                     <i class="i3"></i>
                     <i class="i4"></i>
                     <em></em>
                     <span>我的收藏</span>
                 </a>
                 <!--  -->
-                <a href="">
+                <a class="aChange" href="#">
                     <i class="i5"></i>
                     <i class="i6"></i>
                     <em></em>
                     <span>浏览足迹</span>
                 </a>
                 <!--  -->
-                <a href="">
+                <a href="#">
                     <i class="i7"></i>
                     <i class="i8"></i>
                     <div class="text">
@@ -72,13 +72,65 @@
                     <em></em>
                     <span>返回顶部</span>
                 </a>
-
-
             </div>
         </div>
         <div class="right">
+            <div class="floor1  floor">
+                <div class="top">
+                    <b>购物车</b>
+                    <i></i>
+                </div>
+                <div class="middle">
+                    <span>登录后显示您之前加入的商品</span>
+                    <a href="#">现在登录</a>
+                </div>
+                <div class="bottom">
+                    <i></i>
+                    <span>快去挑选心仪的商品吧</span>
+                </div>
 
-            
+            </div>
+            <!--  -->
+            <div class="floor2 floor">
+                <div class="top">
+                    <ul>
+                        <li>
+                            <a class="active" href="javascript:;">商品收藏</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">店铺收藏</a>
+                        </li>
+                    </ul>
+                    <i></i>
+                </div>
+
+                <div class="middle">
+                    <span>登录后显示您之前收藏的内容</span>
+                    <a href="#">现在登录</a>
+                </div>
+                <div class="bottom">
+                    <span>快去收藏心仪的商品吧</span>
+                </div>
+                <!--  -->
+
+            </div>
+            <!--  -->
+            <div class="floor3 floor">
+                <div class="top">
+                    <b>浏览足迹</b>
+                    <i></i>
+                </div>
+                <div class="middle">
+                    <span>登录后将显示您之前浏览商品</span>
+                    <a href="#">现在登录</a>
+
+                </div>
+                <div class="bottom">
+                    <span>暂无浏览记录</span>
+                </div>
+
+
+            </div>
         </div>
 
     </div>
@@ -87,7 +139,7 @@
     <script>
         // 划过客服头像
         $(".talk").hover(function name(params) {
-            $(".talk2").show(100, function name(params) {
+            $(".talk2").show(200, function name(params) {
                 $(".talk2 .i1").click(function name(params) {
                     $(".talk2").stop(false, true);
                     $(".talk2").hide(10);
@@ -125,6 +177,54 @@
                 scrollTop: '0'
             }, 1000);
 
+        })
+
+
+        // 点击左边栏
+        $(".aside2 .aChange").each(function name(index, item) {
+            var index1 = index;
+            $(this).click(function name() {
+                // 容器a背景色
+                $(this).css("background-color", "#333").siblings().css("background-color", "#fff");
+
+                //容器a 里的i切换
+                $(".aChange").each(function name(params) {
+                    $(this).find("i").eq(1).hide();
+                })
+                $(".aChange").each(function name(params) {
+                    $(this).find("i").eq(0).show();
+                })
+
+                $(this).find("i").eq(1).show();
+
+                // 显示右边对应的内容
+                $(".right  .floor").eq(index1).show().siblings().hide();
+            })
+
+        })
+
+
+        // 点击右边栏中的x
+        $(".floor .top i").click(function name(params) {
+            // 右侧藏起来
+            $(".floor").hide();
+
+            // 左侧容器a背景色
+            $(".aside2 .aChange").css("background-color", "#fff");
+
+            //容器a 里的i切换
+            $(".aChange").each(function name(params) {
+                $(this).find("i").eq(1).hide();
+            })
+            $(".aChange").each(function name(params) {
+                $(this).find("i").eq(0).show();
+            })
+        })
+
+        // 我的收藏点击右边栏中的商品和店铺
+        $(".floor .top ul a").click(function name(params) {
+            $(".floor .top ul a").removeClass("active");
+            $(this).addClass("active");
         })
     </script>
 </body>
