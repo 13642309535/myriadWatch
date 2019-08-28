@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>aside</title>
+    <link rel="stylesheet" href="http://127.0.0.1/myriadWatch/css/base.css">
+    <link rel="stylesheet" href="http://127.0.0.1/myriadWatch/css/aside.css">
+    <script src="http://127.0.0.1/myriadWatch/js/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+
+    <div class="aside">
+        <div class="left">
+            <div class="talk">
+                <a class="a1" href=""></a>
+                <div class="talk2">
+                    <i class="i1"></i>
+                    <i class="i2"></i>
+                    <div class="detail">
+                        <div class="detail1">
+                            <h3>开学季 “戴”着英雄去上学</h3>
+                            <p>领取英雄券 咨询客服送好礼</p>
+                        </div>
+
+                    </div>
+                    <div class="detail2">
+                        <a class="a2" href="">选表咨询</a>
+                        <a href="">手表维修</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="aside2">
+                <a href="">
+                    <i class="i1"></i>
+                    <i class="i2"></i>
+                    <em></em>
+                    <span>购物车</span>
+                </a>
+                <!--  -->
+                <a href="">
+                    <i class="i3"></i>
+                    <i class="i4"></i>
+                    <em></em>
+                    <span>我的收藏</span>
+                </a>
+                <!--  -->
+                <a href="">
+                    <i class="i5"></i>
+                    <i class="i6"></i>
+                    <em></em>
+                    <span>浏览足迹</span>
+                </a>
+                <!--  -->
+                <a href="">
+                    <i class="i7"></i>
+                    <i class="i8"></i>
+                    <div class="text">
+                        <img src="//qd2.wbiao.co/img/5.0/index/tdc/QRcode_wbapp.png?20160919" alt="">
+                        <p>下载万表APP</p>
+                    </div>
+
+                </a>
+                <!--  -->
+                <a href="#" class="toTop">
+                    <i class="i9"></i>
+                    <i class="i10"></i>
+                    <em></em>
+                    <span>返回顶部</span>
+                </a>
+
+
+            </div>
+        </div>
+        <div class="right">
+
+            
+        </div>
+
+    </div>
+
+
+    <script>
+        // 划过客服头像
+        $(".talk").hover(function name(params) {
+            $(".talk2").show(100, function name(params) {
+                $(".talk2 .i1").click(function name(params) {
+                    $(".talk2").stop(false, true);
+                    $(".talk2").hide(10);
+                })
+                $(".talk2").hover(function name(params) {
+                    $(".talk2").stop(false, true);
+                    $(this).css("display", "block");
+                })
+
+            });
+
+        }, function name(params) {
+            $(".talk2").hide(300);
+
+        })
+
+
+        // 划过aside2（侧栏购物车，收藏...）
+        $(".aside2 a").hover(function name(params) {
+            $(this).find("span").fadeIn(10);
+            $(this).find(".text").fadeIn(10);
+
+        }, function name(params) {
+            $(this).find("span").fadeOut(300);
+            $(this).find(".text").fadeOut(300);
+
+
+        })
+
+        // 返回顶部
+        $(".toTop").click(function name(event) {
+
+
+            $('body').animate({
+                scrollTop: '0'
+            }, 1000);
+
+        })
+    </script>
+</body>
+
+</html>

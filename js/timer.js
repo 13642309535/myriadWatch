@@ -31,8 +31,6 @@ var timer = setInterval(function () {
     var s = Math.floor(offset % 60);
 
     d = addZero(d);
-    console.log(d);
-
     h = addZero(h);
     m = addZero(m);
     s = addZero(s);
@@ -47,7 +45,7 @@ var timer = setInterval(function () {
 
 function addZero(a) {
     if (a < 10) {
-        a = ("0" + a) ;
+        a = ("0" + a);
     }
     return a;
 }

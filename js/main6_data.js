@@ -1,15 +1,15 @@
  // 拿数据代码
- var arrT = [];
- $(".guess_like_slider a").each(function name(index, item) {
-     let obj = {};
-     obj.imgSrc = $(item).find(".g_img img").attr("src");
-     obj.title = $(item).find(".p1").html();
-     obj.title2 = $(item).find(".p2").html();
-     obj.fenqi_price = $(item).find(".fenqi_price").html();
-     obj.price = $(item).find(".wb_price").html();
-     arrT.push(obj);
- })
- console.log(JSON.stringify(arrT));
+ //  var arrT = [];
+ //  $(".guess_like_slider a").each(function name(index, item) {
+ //      let obj = {};
+ //      obj.imgSrc = $(item).find(".g_img img").attr("src");
+ //      obj.title = $(item).find(".p1").html();
+ //      obj.title2 = $(item).find(".p2").html();
+ //      obj.fenqi_price = $(item).find(".fenqi_price").html();
+ //      obj.price = $(item).find(".wb_price").html();
+ //      arrT.push(obj);
+ //  })
+ //  console.log(JSON.stringify(arrT));
 
  let main6_data = [{
      "imgSrc": "//image6.wbiao.co/shop/f29bae2deb9143cab946f7327d677e59.jpg?x-oss-process=image/resize,m_pad,h_223",

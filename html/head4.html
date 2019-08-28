@@ -359,7 +359,12 @@
                     <li><a href="">手表资讯</a></li>
                 </ul>
             </div>
-            <div class="searchCar">
+            <div class="searchCar  clearfloat">
+
+                <div class="search_left">
+                    <i></i>
+                </div>
+
                 <label for="">
                     <span>劳力士</span>
                     <input type="text">
@@ -622,6 +627,87 @@
         })
 
         $(".dd2").eq(7).find(".ul2").html(htmlAll8);
+
+
+
+
+
+
+        // 吸顶
+        window.onscroll = function () {
+            //获取滚动距离
+            var scrollTop = window.scrollY;
+            if (scrollTop >= 143) {
+                //达到临界点,给菜单添加类名
+
+                $('#head4 .a1').css({
+                    "position": "fixed",
+                    // "left": "44px",
+                    "width": "170px",
+                    "top": "0",
+                    "z-index": "6",
+                    "background-image": "url(https://static.wbiao.co/p/pc/images/1/logo-icon-w.png)",
+
+                    "background-repeat": "no-repeat",
+                    "background-position": " 10px center",
+                    "background-color": "rgb(179, 36, 36)"
+
+                });
+                $("#head4 .a1").text("");
+                $("#head4 .a1").append("<i></i>");
+
+
+
+                $('#head4 .right').css({
+                    "position": "fixed",
+                    "left": "246px",
+                    "top": "0",
+                    "z-index": "5",
+                    "width": "100%"
+                });
+
+
+                $(".searchCar").css({
+                    "position": "fixed",
+                    "right": "140px",
+                    "top": "0",
+                    "display": "block",
+                    "z-index": 6,
+
+                })
+
+
+
+            } else {
+                $('#head4 .a1').css("position", "static");
+
+                $('#head4 .a1').css("background-color", "#b32424")
+                $('#head4 .a1').css("background-image", "linear-gradient(269deg, #b34747 1%, #cc5252 98%)");
+                $('#head4 .a1').css("background-position", "0% 0%");
+                $('#head4 .right').css("position", "static");
+                $('#head4 .right').css("width", "716px");
+
+                $("#head4 .a1").text("全部商品");
+                $("#head4 .a1").append("<i></i>");
+
+                $(".searchCar").css("display", "none")
+            }
+        }
+
+
+        // 点击搜索
+        $(".head4 .iSearch").click(function name(params) {
+            $(".searchCar .search_left").show(function name(params) {
+                $(this).click(function name(params) {
+                    $(".searchCar .search_left").hide(500);
+                    $(".searchCar label").hide(500);
+                })
+
+            });
+            $(".searchCar label").show();
+
+
+        })
     </script>
 </body>
 
