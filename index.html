@@ -27,6 +27,7 @@
     <div id="main5"></div>
     <div id="main6"></div>
     <div id="foot"></div>
+    <div id="aside"></div>
 
 
 
@@ -44,76 +45,17 @@
     $("#main5").load("html/main5.html");
     $("#main6").load("html/main6.html");
     $("#foot").load("html/foot.html");
+    $("#aside").load("html/aside.html");
 
 
 
 
+  
 
 
 
 
-    // 吸顶
-    window.onscroll = function () {
-        //获取滚动距离
-        var scrollTop = window.scrollY;
-        if (scrollTop >= 143) {
-            //达到临界点,给菜单添加类名
-
-            $('#head4 .a1').css({
-                "position": "fixed",
-                "left": "74px",
-                "width": "170px",
-                "top": "0",
-                "z-index": "5",
-                "background-image": "url(https://static.wbiao.co/p/pc/images/1/logo-icon-w.png)",
-
-                "background-repeat": "no-repeat",
-                "background-position": " 10px center",
-                "background-color": "rgb(179, 36, 36)"
-
-            });
-            $("#head4 .a1").text("");
-            $("#head4 .a1").append("<i></i>");
-
-
-
-            $('#head4 .right').css({
-                "position": "fixed",
-                "left": "276px",
-                "top": "0",
-                "z-index": "5",
-                "width": "100%"
-            });
-
-
-            $(".searchCar").css({
-                "position": "fixed",
-                "right": "140px",
-                "top": "0",
-                "display": "block",
-                "z-index": 6,
-
-            })
-
-
-
-        } else {
-            $('#head4 .a1').css("position", "static");
-
-            $('#head4 .a1').css("background-color", "#b32424")
-            $('#head4 .a1').css("background-image", "linear-gradient(269deg, #b34747 1%, #cc5252 98%)");
-            $('#head4 .a1').css("background-position", "0% 0%");
-            $('#head4 .right').css("position", "static");
-            $('#head4 .right').css("width", "716px");
-
-            $("#head4 .a1").text("全部商品");
-            $("#head4 .a1").append("<i></i>");
-
-            $(".searchCar").css("display", "none")
-
-
-        }
-    }
+    
 </script>
 
 
