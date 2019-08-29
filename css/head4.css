@@ -70,6 +70,7 @@
 
 .head4 .content .left .ul1 > li dl dt {
   float: left;
+  height: 100%;
 }
 
 .head4 .content .left .ul1 > li dl dt a {
@@ -77,11 +78,13 @@
   float: left;
   margin-right: 4px;
   font-weight: 700;
+  line-height: 57.5px;
 }
 
 .head4 .content .left .ul1 > li dl dt em {
   display: inline-block;
   color: #b3b3b3;
+  line-height: 57.5px;
 }
 
 .head4 .content .left .ul1 > li dl .dd1 {
@@ -92,6 +95,7 @@
 
 .head4 .content .left .ul1 > li dl .dd1 a {
   padding: 0;
+  line-height: 57.5px;
   color: #666;
 }
 

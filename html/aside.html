@@ -199,6 +199,9 @@
 
                 // 显示右边对应的内容
                 $(".right  .floor").eq(index1).show().siblings().hide();
+
+                $(".right").show(500);
+
             })
 
         })
@@ -206,8 +209,12 @@
 
         // 点击右边栏中的x
         $(".floor .top i").click(function name(params) {
+
+
             // 右侧藏起来
+            $(".right").hide();
             $(".floor").hide();
+
 
             // 左侧容器a背景色
             $(".aside2 .aChange").css("background-color", "#fff");

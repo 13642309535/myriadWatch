@@ -1,0 +1,487 @@
+.listPage1 {
+  font-size: 12px;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  background: url(//static.wbiao.co/p/pc/images/goods/W_detail_Bread.png) repeat-x;
+  overflow: hidden;
+  color: #666;
+  margin-bottom: 18px;
+}
+
+.listPage1 .content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.listPage1 .content .right a {
+  display: block;
+  margin: 0 8px;
+  line-height: 36px;
+}
+
+.listPage2 {
+  font-size: 12px;
+}
+
+.listPage2 .content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.listPage2 .content .left {
+  width: 210px;
+  height: 10000px;
+  background-color: pink;
+}
+
+.listPage2 .content .right {
+  width: 970px;
+}
+
+.listPage2 .content .right .top {
+  position: relative;
+  color: #666;
+  background: #fff;
+  margin-bottom: 45px;
+  border: 1px solid #ddd;
+  padding-left: 1px;
+  padding-right: 3px;
+}
+
+.listPage2 .content .right .top .d1 {
+  position: relative;
+  background: #fafafa;
+  min-width: 22px;
+  line-height: 22px;
+  padding: 5px 80px 5px 12px;
+  border-bottom: 0;
+}
+
+.listPage2 .content .right .top .d1 .select {
+  display: inline-block;
+}
+
+.listPage2 .content .right .top .d1 .select a {
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+  border: 1px solid #dfdfdf;
+  padding: 0 3px;
+  margin-left: 5px;
+  color: #313131;
+  box-sizing: border-box;
+}
+
+.listPage2 .content .right .top .d1 .select a b {
+  color: #333;
+}
+
+.listPage2 .content .right .top .d1 .select a b em {
+  display: inline-block;
+  margin-left: 5px;
+  background-image: url(http://127.0.0.1/myriadWatch/images/a.png);
+  background-position: -206px -89px;
+  background-size: 589px;
+  width: 7px;
+  height: 7px;
+}
+
+.listPage2 .content .right .top .d1 .a1 {
+  color: #999;
+  position: absolute;
+  top: 7px;
+  right: 10px;
+}
+
+.listPage2 .content .right .top .dd > span {
+  display: block;
+  width: 80px;
+  height: 100%;
+  line-height: 40px;
+  font-weight: 700;
+  color: #666;
+  background-color: #fafafa;
+  float: left;
+  text-align: center;
+}
+
+.listPage2 .content .right .top .d2 {
+  line-height: 40px;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.listPage2 .content .right .top .d2 .classifyRight {
+  position: relative;
+  margin-left: 80px;
+  margin-right: 12px;
+}
+
+.listPage2 .content .right .top .d2 .classifyRight .classifyRightA {
+  width: 750px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.listPage2 .content .right .top .d2 .classifyRight .classifyRightA ul li {
+  margin-right: 23px;
+  display: block;
+  float: left;
+}
+
+.listPage2 .content .right .top .d2 .classifyRight .classifyRightA ul li a {
+  color: #666;
+  padding: 0 3px;
+  line-height: 26px;
+}
+
+.listPage2 .content .right .top .d2 .classifyRight .classifyRightA ul li .active {
+  background: #333;
+  color: #fff;
+  padding-bottom: 1px;
+  padding: 0 3px;
+}
+
+.listPage2 .content .right .top .d3 {
+  line-height: 40px;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.listPage2 .content .right .top .d3 .price {
+  position: relative;
+  margin-left: 80px;
+  margin-right: 12px;
+}
+
+.listPage2 .content .right .top .d3 .price .priceA {
+  height: 40px;
+  overflow: hidden;
+}
+
+.listPage2 .content .right .top .d3 .price .priceA ul li {
+  margin-right: 14px;
+  float: left;
+}
+
+.listPage2 .content .right .top .d3 .price .priceA ul li a {
+  color: #666;
+  padding: 0 3px;
+  line-height: 26px;
+}
+
+.listPage2 .content .right .top .d3 .price .priceA ul li:last-child {
+  margin-right: 0px;
+}
+
+.listPage2 .content .right .top .d3 .price .priceB {
+  float: right;
+}
+
+.listPage2 .content .right .top .d3 .price .priceB input {
+  width: 49px;
+  text-align: center;
+  border: 1px solid #dbdbdb;
+  outline: 0;
+  height: 19px;
+  line-height: 19px;
+  vertical-align: middle;
+}
+
+.listPage2 .content .right .top .d3 .price .priceB button {
+  width: 52px;
+  height: 20px;
+  line-height: 20px;
+  cursor: pointer;
+  margin-left: 8px;
+  display: inline-block;
+  background: #f0f0f0;
+  border: 1px solid #ececec;
+  text-align: center;
+  color: #666;
+  float: right;
+  margin-top: 12px;
+}
+
+.listPage2 .content .right .top .d4 {
+  line-height: 40px;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.listPage2 .content .right .top .d4 span {
+  height: 118px;
+}
+
+.listPage2 .content .right .top .d4 .brand {
+  position: relative;
+  margin-left: 80px;
+  margin-right: 12px;
+  height: 118px;
+}
+
+.listPage2 .content .right .top .d4 .brand .brandA {
+  width: 743px;
+  height: 100%;
+}
+
+.listPage2 .content .right .top .d4 .brand .brandA ul {
+  padding: 5px 10px;
+  height: 100%;
+}
+
+.listPage2 .content .right .top .d4 .brand .brandA ul li {
+  width: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 10px;
+  float: left;
+  height: 26px;
+}
+
+.listPage2 .content .right .top .d4 .brand .brandA ul li a {
+  display: block;
+  width: 110px;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 10px;
+  color: #666;
+  padding: 0 3px;
+  line-height: 26px;
+}
+
+.listPage2 .content .right .top .d4 .brand .brandA ul li a em {
+  display: none;
+}
+
+.listPage2 .content .right .top .d4 .brand .brandC a {
+  display: inline-block;
+  width: 50px;
+  background: #f0f0f0;
+  border: 1px solid #ececec;
+  margin-left: 5px;
+  margin-top: 10px;
+  text-align: center;
+  color: #666;
+}
+
+.listPage2 .content .right .top .d4 .brand .brandC a i {
+  transition: all .3s ease;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 4px;
+  background-image: url(http://127.0.0.1/myriadWatch/images/d.png);
+  background-position: -389px -86px;
+  background-size: 475px;
+  width: 12px;
+  height: 12px;
+}
+
+.listPage2 .content .right .top .d5 .core {
+  height: 40px;
+}
+
+.listPage2 .content .right .top .d5 .core ul {
+  float: left;
+  height: 100%;
+}
+
+.listPage2 .content .right .top .d5 .core ul li {
+  height: 100%;
+  margin-right: 23px;
+  float: left;
+}
+
+.listPage2 .content .right .top .d5 .core ul li a {
+  display: block;
+  color: #666;
+  padding: 0 3px;
+  line-height: 40px;
+}
+
+.listPage2 .content .right .top .d5 .core .more {
+  display: inline-block;
+  width: 50px;
+  background: #f0f0f0;
+  border: 1px solid #ececec;
+  margin-left: 5px;
+  margin-top: 10px;
+  text-align: center;
+  color: #666;
+  float: right;
+}
+
+.listPage2 .content .right .top .d5 .core .more i {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+  background-image: url(http://127.0.0.1/myriadWatch/images/d.png);
+  background-position: -279px -86px;
+  background-size: 475px;
+  width: 12px;
+  height: 12px;
+}
+
+.listPage2 .content .right .top .d6 {
+  margin-bottom: 1px;
+  line-height: 40px;
+  position: relative;
+  height: 40px;
+}
+
+.listPage2 .content .right .top .d6 .materials {
+  width: 745px;
+  height: 40px;
+}
+
+.listPage2 .content .right .top .d6 .materials ul {
+  float: left;
+  height: 100%;
+}
+
+.listPage2 .content .right .top .d6 .materials ul li {
+  height: 100%;
+  margin-right: 23px;
+  float: left;
+}
+
+.listPage2 .content .right .top .d6 .materials ul li a {
+  display: block;
+  color: #666;
+  padding: 0 3px;
+  line-height: 40px;
+}
+
+.listPage2 .content .right .top .d6 .more {
+  display: inline-block;
+  width: 50px;
+  background: #f0f0f0;
+  border: 1px solid #ececec;
+  margin-left: 5px;
+  margin-top: 10px;
+  text-align: center;
+  color: #666;
+  float: right;
+}
+
+.listPage2 .content .right .top .d6 .more i {
+  transition: all .3s ease;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 4px;
+  background-image: url(http://127.0.0.1/myriadWatch/images/d.png);
+  background-position: -389px -86px;
+  background-size: 475px;
+  width: 12px;
+  height: 12px;
+}
+
+.listPage2 .content .right .top .d6 .moreSelect {
+  display: inline-block;
+  width: 50px;
+  background: #f0f0f0;
+  border: 1px solid #ececec;
+  margin-left: 5px;
+  margin-top: 10px;
+  text-align: center;
+  color: #666;
+  float: right;
+}
+
+.listPage2 .content .right .top .d6 .moreSelect i {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 4px;
+  background-image: url(http://127.0.0.1/myriadWatch/images/d.png);
+  background-position: -279px -86px;
+  background-size: 475px;
+  width: 12px;
+  height: 12px;
+}
+
+.listPage2 .content .right .top .d7 {
+  width: 280px;
+  height: 24px;
+  line-height: 20px;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -140px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.listPage2 .content .right .top .d7 .d7A {
+  width: 280px;
+  display: inline-block;
+  height: 24px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top-color: #fff;
+  cursor: pointer;
+  color: #999;
+}
+
+.listPage2 .content .right .top .d7 .d7A i {
+  margin-bottom: -1px;
+  display: inline-block;
+  background-image: url(http://127.0.0.1/myriadWatch/images/a.png);
+  background-position: -576px -434px;
+  background-size: 589px;
+  width: 10px;
+  height: 10px;
+}
+
+.listPage2 .content .right .middle {
+  margin: 0 auto 25px;
+  background: #fff;
+}
+
+.listPage2 .content .right .middle .title {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.listPage2 .content .right .middle .title .left2 ul li {
+  display: block;
+  float: left;
+  width: 80px;
+  height: 36px;
+  text-align: center;
+}
+
+.listPage2 .content .right .middle .title .left2 ul li a {
+  position: relative;
+  line-height: 34px;
+  display: inline-block;
+}
+
+.listPage2 .content .right .middle .title .right2 a {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 0;
+}
+
+.listPage2 .content .right .middle .title .right2 a .iBack1 {
+  background-image: url(http://127.0.0.1/myriadWatch/images/a.png);
+  background-position: -576px -474px;
+  background-size: 589px;
+  width: 6px;
+  height: 11px;
+}
+
+.listPage2 .content .right .middle .title .right2 a .iBack2 {
+  background-image: url(http://127.0.0.1/myriadWatch/images/a.png);
+  background-position: -576px -474px;
+  background-size: 589px;
+  width: 6px;
+  height: 11px;
+}

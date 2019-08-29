@@ -70,18 +70,23 @@
 
                         dt {
                             float: left;
+                            height: 100%;
 
                             a {
                                 color: #4d4d4d;
                                 float: left;
                                 margin-right: 4px;
                                 font-weight: 700;
+                                line-height: 57.5px;
+
                             }
 
                             em {
                                 display: inline-block;
                                 color: #b3b3b3;
                                 // margin-left: 5px;
+                                line-height: 57.5px;
+
                             }
                         }
 
@@ -94,7 +99,7 @@
                             a {
                                 padding: 0;
                                 // margin-right: 3px;
-                                // line-height: 57.5px;
+                                line-height: 57.5px;
                                 color: #666;
                             }
                         }
@@ -270,7 +275,7 @@
 
             .search_left {
                 float: left;
-                
+
                 display: none;
 
                 i {

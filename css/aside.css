@@ -276,6 +276,7 @@
 }
 
 .aside .right {
+  display: none;
   height: 100%;
   background: #f1f1f1;
   transition: right 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
