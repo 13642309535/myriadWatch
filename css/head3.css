@@ -34,6 +34,18 @@
   cursor: text;
 }
 
+.head3 .content .right label i {
+  position: absolute;
+  top: 11px;
+  left: 7px;
+  display: block;
+  background-image: url(http://127.0.0.1/myriadWatch/images/d.png);
+  background-position: -193px -346px;
+  background-size: 475px;
+  width: 16px;
+  height: 16px;
+}
+
 .head3 .content .right label span {
   width: 286px;
   position: absolute;

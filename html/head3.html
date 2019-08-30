@@ -8,6 +8,7 @@
     <title>head3</title>
     <link rel="stylesheet" href="http://127.0.0.1/myriadWatch/css/base.css">
     <link rel="stylesheet" href="http://127.0.0.1/myriadWatch/css/head3.css">
+    <script src="http://127.0.0.1/myriadWatch/js/jquery-3.4.1.js"></script>
 </head>
 
 <body>
@@ -21,8 +22,7 @@
             <div class="right fl">
                 <label class="fl">
                     <i></i>
-                    <span>劳力士</span>
-                    <input type="text" value="">
+                    <input type="text" value="劳力士">
                 </label>
                 <button class="fl">搜索</button>
             </div>
@@ -35,7 +35,12 @@
 
 
     </div>
-
+    <script>
+        $(".head3 label input").focus(function name(params) {
+            $(this).val("");
+            
+        })
+    </script>
 
 </body>
 

@@ -30,9 +30,8 @@
         margin: 0 auto;
 
         .left {
-
             width: 210px;
-            height: 10000px;
+            height: auto;
             background-color: pink;
         }
 
@@ -478,6 +477,7 @@
                 background: #fff;
 
                 .title {
+                    border-bottom: 1px solid #eee;
                     display: inline-block;
                     vertical-align: top;
 
@@ -495,11 +495,27 @@
                                     line-height: 34px;
                                     display: inline-block;
                                 }
+
+                                .active {
+                                    color: #cc9952;
+                                    font-weight: 700;
+                                    border-bottom: 3px solid #cc9952;
+
+                                }
                             }
+
                         }
                     }
 
+                    .middle2 {
+                        width: 500px;
+                        height: 36px;
+                    }
+
                     .right2 {
+                        line-height: 36px;
+
+
                         a {
                             position: relative;
                             display: inline-block;
@@ -508,30 +524,334 @@
                             text-align: center;
                             vertical-align: middle;
                             z-index: 0;
-                            .iBack1{
+
+                            i {
+                                position: absolute;
+                                top: 6px;
+                                left: 6px;
                                 background-image: url(http://127.0.0.1/myriadWatch/images/a.png);
-                                background-position: -576px -474px;
                                 background-size: 589px;
                                 width: 6px;
                                 height: 11px;
+                                line-height: 10px;
                             }
-                            .iBack2{
-                                background-image: url(http://127.0.0.1/myriadWatch/images/a.png);
+
+
+                        }
+
+                        .aBack {
+
+                            .iBack1 {
+                                display: block;
+
                                 background-position: -576px -474px;
-                                background-size: 589px;
-                                width: 6px;
-                                height: 11px;
+
+                            }
+
+                            .iBack2 {
+                                background-position: -576px -474px;
+
+                                display: none;
+                            }
+
+
+
+                            span {
+                                margin-right: 10px;
+                                font-size: 14px;
+                                color: #999;
+
                             }
                         }
-                        span{
-                            
+
+                        .aNext {
+
+                            .iNext1 {
+                                position: absolute;
+                                top: 6px;
+                                left: 6px;
+                                display: block;
+                                background-image: url(http://127.0.0.1/myriadWatch/images/a.png);
+                                background-position: -576px -516px;
+                            }
+
+                            .iNext2 {
+                                display: none;
+
+                                position: absolute;
+                                top: 6px;
+                                left: 6px;
+                                background-image: url(http://127.0.0.1/myriadWatch/images/a.png);
+                                background-position: -576px -495px;
+                            }
+                        }
+
+                        span {
+                            margin-right: 10px;
+                            font-size: 14px;
+                            color: #999;
                         }
                     }
 
 
                 }
 
+                .detail {
+                    ul {
+                        margin-right: -8.6px;
+
+                        li {
+                            position: relative;
+                            width: 236px;
+                            height: 450px;
+                            display: block;
+                            overflow: hidden;
+                            float: left;
+                            margin: 10px 8.6px 10px 0;
+
+                            .aTop {
+                                display: block;
+                                overflow: hidden;
+                                width: 220px;
+                                height: 275px;
+                                margin: 10px auto 5px auto;
+                                position: relative;
+                                text-align: center;
+
+                                .imgGood {
+                                    width: auto;
+                                    height: 275px;
+                                    position: absolute;
+                                    left: 50%;
+                                    margin-left: -137.5px;
+                                    background-color: #fff;
+                                    border: 0;
+                                    display: block;
+                                }
+
+                                .schoolOpen {
+                                    position: absolute;
+                                    width: 100%;
+                                    bottom: 0;
+                                    left: 0;
+
+                                    .schoolOpenImg {
+                                        width: 100%;
+                                    }
+
+                                    span {
+                                        position: absolute;
+                                        right: 17px;
+                                        bottom: 7px;
+                                        color: #fff;
+                                        font-size: 12px;
+
+                                        em {
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+
+                            }
+
+                            .goodsText {
+                                margin: 0 16px;
+                                padding-bottom: 20px;
+                                line-height: 18px;
+
+                                .p1 {
+                                    overflow: hidden;
+                                    margin-bottom: 10px;
+
+                                    .emMonth {
+                                        position: relative;
+                                        top: -2px;
+                                        display: inline-block;
+                                        padding: 0 2px;
+                                        background: linear-gradient(270deg, #ff8080 0, #e65c5c 100%);
+                                        border-radius: 2px;
+                                        color: #fff;
+                                    }
+
+                                    .fenqi_price {
+                                        margin-right: 10px;
+                                        color: #e65c5c;
+                                        font-size: 16px;
+
+                                        em {
+                                            font-size: 16px;
+                                            font-weight: 700;
+                                        }
+                                    }
+
+                                    .s_price {
+                                        position: relative;
+                                        color: #666;
+                                        font-size: 16px;
+                                        font-family: DIN-Bold;
+                                        font-weight: 400;
+                                    }
+
+                                }
+
+                                .aGoodsName {
+                                    height: 36px;
+                                    line-height: 18px;
+                                    margin-bottom: 8px;
+                                    color: #666;
+                                    overflow: hidden;
+                                    -webkit-line-clamp: 2;
+                                    -webkit-box-orient: vertical;
+                                    word-break: break-all;
+                                    display: -webkit-box;
+                                }
+
+                                .goods_sale {
+                                    margin-bottom: 4px;
+                                    color: #999;
+
+                                    span {
+                                        color: #cc5252;
+                                        margin-bottom: 8px;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+
+                                    }
+                                }
+
+                                .aShop {
+                                    color: #999;
+                                    display: block;
+                                    margin-bottom: 7px;
+
+                                }
+
+                                .p2 {
+                                    span {
+                                        background: 0 0;
+                                        border: 1px solid #cc9952;
+                                        color: #cc9952;
+                                        display: inline-block;
+                                        line-height: 16px;
+                                        padding: 0 7px;
+                                        border-radius: 2px;
+                                    }
+                                }
+
+                                .liHover {
+                                    position: absolute;
+                                    bottom: 10px;
+                                    width: 204px;
+                                    display: none;
+                                    background: #fff;
+
+                                    .addCollect {
+                                        display: block;
+                                        float: left;
+                                        border: 1px solid #eee;
+                                        box-sizing: border-box;
+                                        width: 50%;
+                                        text-align: center;
+                                        line-height: 28px;
+                                        color: #333;
+                                    }
+
+                                    .collected {
+                                        color: #999;
+                                        float: left;
+                                        border: 1px solid #eee;
+                                        box-sizing: border-box;
+                                        width: 50%;
+                                        text-align: center;
+                                        line-height: 28px;
+                                    }
+
+                                    .addCar {
+                                        color: #cc5252;
+                                        margin-left: -1px;
+                                        display: block;
+                                        float: left;
+                                        border: 1px solid #eee;
+                                        box-sizing: border-box;
+                                        width: 50%;
+                                        text-align: center;
+                                        line-height: 28px;
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                #pageNumber {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    i {
+
+                        width: 28px;
+                        height: 28px;
+                        line-height: 28px;
+                        font-size: 14px;
+                        color: #999;
+                        margin-left: 8px;
+                        border-radius: 50%;
+                        border: 1px solid #fff;
+                        background-size: 589px;
+                        background-image: url(http://127.0.0.1/myriadWatch/images/a.png);
+                    }
+
+                    #pgup {
+
+                        background-position: -507px -38px;
+                    }
+
+                    #pgdn {
+                        background-position: -507px 0;
+                    }
+
+                    #page {
+
+                        span {
+                            display: inline-block;
+                            width: 28px;
+                            height: 28px;
+                            line-height: 28px;
+                            font-size: 14px;
+                            color: #999;
+                            margin-left: 8px;
+                            border-radius: 50%;
+                            border: 1px solid #fff;
+                            cursor: pointer;
+                            text-align: center;
+
+                        }
+
+                        .active {
+                            border: 1px solid #666;
+                            background-color: #666;
+                            color: #fff;
+
+                        }
+
+                        b {
+                            display: inline-block;
+                            width: 28px;
+                            height: 28px;
+                            margin-left: 8px;
+                            text-align: center;
+
+                        }
+                    }
+
+
+                }
             }
+
 
         }
     }

@@ -15,7 +15,7 @@
 
 
 
-.iconClose{
+.iconClose {
     display: block;
     background-image: url(http://127.0.0.1/myriadWatch/images/a.png);
     background-position: -456px -414px;
@@ -86,7 +86,7 @@
     float: left;
 }
 
-.right2 a {
+.head2 .right2 a {
     display: block;
     color: #999;
     float: left;
@@ -180,7 +180,7 @@
 
 }
 
- .serverInner ul li a {
+.serverInner ul li a {
     display: block;
     line-height: normal;
     color: black;
