@@ -50,9 +50,7 @@ img {
     *font-family: Arial;
     *line-height: 1;
 }
-.zoomMask{
-    background-color: pink;
-}
+
 .tb-thumb {
     display: flex;
     flex-flow: nowrap;
@@ -71,8 +69,9 @@ img {
     padding: 1px;
     z-index: 3；
 }
-.tb-thumb li img{
-  width: 64px;
+
+.tb-thumb li img {
+    width: 64px;
 }
 
 .tb-s310,
@@ -83,7 +82,7 @@ img {
 
 .tb-s310,
 .tb-s310 img {
-   width: 480px;
+    width: 480px;
 }
 
 .tb-s310 a {

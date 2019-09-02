@@ -625,6 +625,7 @@
   line-height: 44px;
   font-size: 14px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .detailsPage5 .content .right .buy .phoneBuy i {
