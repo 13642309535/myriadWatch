@@ -30,7 +30,7 @@ img {
 
 .box {
     /* width: 610px; */
-    margin: 100px auto;
+    /* margin: 100px auto; */
     width: 498px;
     float: left;
 }
@@ -50,8 +50,14 @@ img {
     *font-family: Arial;
     *line-height: 1;
 }
-
+.zoomMask{
+    background-color: pink;
+}
 .tb-thumb {
+    display: flex;
+    flex-flow: nowrap;
+
+    height: 80px;
     margin: 10px 0 0;
     overflow: hidden;
 }
@@ -63,6 +69,7 @@ img {
     margin: 0 6px 0 0;
     overflow: hidden;
     padding: 1px;
+    z-index: 3；
 }
 .tb-thumb li img{
   width: 64px;

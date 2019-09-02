@@ -11,7 +11,6 @@ class listPage {
         let allLiString = "";
 
         $(this.data).each(function (index, item) {
-
             item.schoolOpenPrice = item.schoolOpenPrice.slice(0, -3) + "," + item.schoolOpenPrice.slice(-3);
             item.s_price = item.s_price.slice(0, -3) + "," + item.s_price.slice(-3);
 
@@ -362,6 +361,7 @@ function pgdnClass(params) {
 // ----------------------------------点击列表跳到详情页
 let data_goodid = ""
 let random = Math.random()
+
 function jump(params) {
 
     $("#list1 .aTop").click(function name(e) {

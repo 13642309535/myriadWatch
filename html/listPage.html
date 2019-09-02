@@ -339,30 +339,31 @@
     // 
 
     //   获取数据代码
-    // var arrT = [];
-    // $("#s_goods_list ul li").each(function name() {
-    //     let obj = {};
+    var arrT = [];
+    $("#s_goods_list ul li").each(function name() {
+        let obj = {};
+console.log(55);
 
-    //     //   上部分数据
-    //     // 商品主图
-    //     obj.imgGood = $(this).find(".lazy-load").attr("src");
-    //     // 开学啦图片
-    //     obj.schoolOpenImg = $(this).find(".yaofeng img").attr("src");
-    //     obj.schoolOpenPrice = $(this).find(".yaofeng .yaofeng_price").text().replace(",", "");
+        //   上部分数据
+        // 商品主图
+        obj.imgGood = $(this).find(".lazy-load").attr("src");
+        // 开学啦图片
+        obj.schoolOpenImg = $(this).find(".yaofeng img").attr("src");
+        obj.schoolOpenPrice = $(this).find(".yaofeng .yaofeng_price").text().replace(",", "");
 
-    //     // 下部分数据
-    //     obj.fenqi_price = $(this).find(".goods_txt .fenqi_price").text().slice(1);
-    //     obj.s_price = $(this).find(".goods_txt .s_price em").text().replace(",", "");
-    //     obj.s_goods_name = $(this).find(".goods_txt .s_goods_name").text();
+        // 下部分数据
+        obj.fenqi_price = $(this).find(".goods_txt .fenqi_price").text().slice(1);
+        obj.s_price = $(this).find(".goods_txt .s_price em").text().replace(",", "");
+        obj.s_goods_name = $(this).find(".goods_txt .s_goods_name").text();
 
-    //     obj.goods_sale1 = $(this).find(".goods_txt .goods_sale span").text();
-    //     obj.goods_sale2 = $(this).find(".goods_txt .goods_sale em").text().slice(2);
-    //     obj.s_shop = $(this).find(".goods_txt .s_shop").text();
+        obj.goods_sale1 = $(this).find(".goods_txt .goods_sale span").text();
+        obj.goods_sale2 = $(this).find(".goods_txt .goods_sale em").text().slice(2);
+        obj.s_shop = $(this).find(".goods_txt .s_shop").text();
 
 
-    //     arrT.push(obj);
-    // })
-    // console.log(JSON.stringify(arrT));
+        arrT.push(obj);
+    })
+    console.log(JSON.stringify(arrT));
 </script>
 <script src="http://127.0.0.1/myriadWatch/js/listPage.js"></script>
 
