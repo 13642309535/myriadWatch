@@ -12,12 +12,13 @@
 /* 参数1：服务器地址 */
 /* 参数3：密码 */
 /* 参数4：数据库名字 */
-$db = mysqli_connect("127.0.0.1","root","","newegg");
+$db = mysqli_connect("127.0.0.1","root","","myriadwatch");
 
-$password = $_REQUEST["password"];
 $phone = $_REQUEST["phone"];
+$password = $_REQUEST["password"];
+$phone2 =isset($_POST['phone2']) ? $_POST['phone2'] :'';
 
-$sql = "INSERT INTO `userList` (`password`, `phone`) VALUES ( '$password', '$phone')";
+$sql = "INSERT INTO `user` (`phone`,`password`,`referrer`) VALUES ( '$phone','$password','$phone2')";
 $result = mysqli_query($db, $sql);
 
 // #bool(false)  | bool(true)

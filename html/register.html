@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="referrer" content="no-referrer" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://127.0.0.1/myriadWatch/css/register.css">
+    <script src="http://127.0.0.1/myriadWatch/js/jquery-3.4.1.js"></script>
+    <script src="http://127.0.0.1/myriadWatch/js/captcha.js"></script>
+    <script src="http://127.0.0.1/myriadWatch/js/register.js"></script>
+    <script src="http://127.0.0.1/myriadWatch/js/md5.pro.js"></script>
+
+    <style>
+        #register {
+            font-family: 'Microsoft Yahei', ' PingFang SC', 'Lucida Grande', Arial, '\5b8b\4f53';
+        }
+
+        #register .form-item .content {
+            position: relative;
+
+        }
+
+        #register .form-item .content em {
+            position: absolute;
+            top: 18px;
+            left: 11px;
+            background-size: 589px;
+            width: 13px;
+            height: 16px;
+            background-image: url(http://127.0.0.1/myriadWatch/images/a.png);
+
+        }
+
+        #register .emPhone {
+
+            background-position: -576px -25px;
+
+        }
+
+        .emPictureCheck,
+        .emMessagesCheck {
+            background-position: -576px 0;
+        }
+
+        #register .form-item .content .emPassword {
+            background-position: -576px -51px;
+
+        }
+
+        #register .form-item .content .image-code-box canvas {
+            width: 98px;
+            height: 38px;
+            margin-left: 14px;
+            margin-top: 7px;
+        }
+
+        input::-webkit-input-placeholder {
+            color: #ccc;
+        }
+
+        #register .form-item .content .eye {
+            top: 16px;
+            right: 11px;
+            position: absolute;
+            display: block;
+            background-image: url(https://pustatic.wbiao.co/public/sprites/d/d.png?153077721);
+            background-position: -142px -92px;
+            background-size: 220px;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+
+        #register .form-item .content .eyeOn {
+            background-position: -188px -137px;
+        }
+
+
+        #register .article .register-form .form-item .content #recommendPhoneID {
+            padding-left: 0px;
+            width: 323px;
+        }
+
+        #register .article .register-form .agree {
+            color: #999;
+            /* margin-left: -22px; */
+        }
+
+        #register .article .register-form .agree a {
+            color: #000;
+            font-size: 12px;
+        }
+
+        #register .article .register-form .form-item {
+            margin-top: 10px;
+        }
+
+        #register .form-group-error .content .form-group__message {
+            position: relative;
+            line-height: 16px;
+            font-size: 10px;
+            color: #d00000;
+            display: block;
+            margin-bottom: -7px;
+            font-weight: 700;
+            background: url(https://pustatic.wbiao.co/public/images/sprites-a/icon-a-error-icon.png) no-repeat left center;
+            padding-left: 18px;
+            height: 16px;
+        }
+
+        #register .article .register-form .form-item {
+            margin-top: 0px;
+        }
+
+        #register .article .register-form .form-item input {
+            margin-top: 6px;
+        }
+
+        #register .article .register-form .form-item .content input {
+            width: 301px;
+            vertical-align: top;
+        }
+
+        #register .article .register-form .form-item.phone-code .phone-code-content .code-sms {
+            width: 103px;
+            margin-left: 7px;
+            padding-left: 0px;
+            background-color: #b32424;
+            ;
+            text-indent: 0px;
+            color: white;
+        }
+
+        #register .article .register-form .form-item.phone-code .phone-code-content .disabled {
+            background-color: #ccc;
+            ;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div id="register">
+            <div class="header">
+                <div class="main-content clearfix">
+                    <a class="logo fl">
+                        <img src="https://pu.wbiao.cn/public/images/1/logo-icon.png" alt="logo">
+                        <img src="https://static.wbiao.co/p/pc/images/1/slogan-0224.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="article">
+                <div class="main-content">
+                    <div class="nav">
+                        <div class="nav-item ">注册万表会员</div>
+                        <div class="nav-item" style="display: none;">注册成功</div>
+                    </div>
+                    <div class="register-form  active">
+                        <div class="SmsValid">
+                            <div class="form-item phone">
+                                <span class="label span1"></span>
+                                <div class="content">
+                                    <em class="emPhone"></em>
+                                    <input type="text" name="phoneNum" placeholder="请输入手机号码" id="phoneID">
+                                    <span class="form-group__message"></span>
+                                    <!---->
+                                    <!---->
+                                </div>
+                            </div>
+                            <div class="form-item image-code"><span class="label"></span>
+                                <div class="content">
+                                    <em class="emPictureCheck"></em>
+                                    <input type="text" maxlength="6" placeholder="请输入图形验证码" id="imageCode">
+                                    <div class="image-code-box">
+                                        <canvas width="160" height="45" id="captcha"></canvas>
+                                        <div class="form-group__message">请输入图形验证码</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item phone-code"><span class="label"></span>
+                                <div class="content">
+                                    <em class="emMessagesCheck
+                                    "></em>
+
+                                    <div class="phone-code-content">
+                                        <input type="text" maxlength="6" placeholder="请输入短信验证码" id="msgCode"> <input
+                                            class="button code-sms" type="button" value="获取验证码">
+                                    </div>
+
+                                    <div class="form-group__message"></div>
+                                    <!---->
+                                </div>
+                            </div>
+                            <div class="form-item phone"><span class="label"></span>
+                                <div class="content">
+                                    <em class="emPassword
+                                    "></em>
+                                    <input type="password" maxlength="16" placeholder="请设置密码" id="passwordA"> <span
+                                        class="form-group__message"></span>
+                                    <i class="eye"></i>
+                                    <!---->
+                                    <!---->
+                                </div>
+                            </div>
+                            <div class="form-item phone">
+
+                                <span class="label"></span>
+                                <div class="content">
+                                    <em class="emPassword
+                                        "></em><input type="password" maxlength="16" placeholder="请再次输入密码"
+                                        id="passwordB">
+                                    <span class="form-group__message"></span>
+                                    <i class="eye"></i>
+
+                                    <!---->
+                                </div>
+                            </div>
+                            <div class="form-item phone">
+                                <span class="label span1"></span>
+                                <div class="content">
+                                    <input type="text" name="phoneNum" placeholder="如有推荐人，请填写推荐人手机号"
+                                        id="recommendPhoneID">
+
+                                    <span class="form-group__message"></span>
+                                    <!---->
+                                    <!---->
+                                </div>
+                            </div>
+                            <div class="form-item"><span class="label"></span> <button class="button register-btn"
+                                    id="registerBtn">立即注册</button></div>
+                            <div class="form-item agree">
+                                <div class="agree">点击“立即注册”，即表示您同意并愿意遵守</label> <a
+                                        href="https://www.wbiao.cn/help-25.html" target="_blank">万表网用户协议</a></div>
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html
