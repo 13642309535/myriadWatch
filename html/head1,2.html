@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="http://127.0.0.1/myriadWatch/css/base.css">
     <link rel="stylesheet" href="http://127.0.0.1/myriadWatch/css/head1,2.css">
     <script src="http://127.0.0.1/myriadWatch/js/jquery-3.4.1.js"></script>
+    <script src="http://127.0.0.1/myriadWatch/js/cookie.js"></script>
+
 </head>
 
 <body>
@@ -24,8 +26,9 @@
             <div class="left fl"><a target="_blank" class="to_introduction" href="#">正品保障，免息分期！</a></div>
             <div class="right fr">
                 <div class="left2 fl">
-                    <a class="a1" href="#">请登录</a>
-                    <a class="a2" href="#">注册即送3500元大礼包</a>
+                    <a class="a1" href="http://127.0.0.1/myriadWatch/html/login.html">请登录</a>
+                    <a href="#" class="a3"></a>
+                    <a class="a2" href="http://127.0.0.1/myriadWatch/html/register.html">注册即送3500元大礼包</a>
                 </div>
                 <div class="right2 fr">
                     <span class="line">|</span>
@@ -57,15 +60,38 @@
     </div>
 
     <script>
-$(".close_slider").click(function name(params) {
-    $(this).css("display","none");
-    $(".head1 img").css("display","none");
+        $(".close_slider").click(function name(params) {
+            $(this).css("display", "none");
+            $(".head1 img").css("display", "none");
 
-    $(".head1").css("height","0");
+            $(".head1").css("height", "0");
+        })
 
-    
-})
 
+        let phone3 = Cookie.getItem("phone");;
+        if (phone3) {
+            $(".head2 .left2 .a1").html(`您好!${phone3}`);
+            $(".head2 .left2 .a1").attr("href", "#");
+            $(".left2 .a3").html("退出");
+
+            $(".left2 .a3").click(function name(params) {
+                Cookie.removeItem("phone");
+                window.location.reload();
+            })
+        }
+
+
+        let phone4 = window.sessionStorage.getItem("phone");
+        if (phone4) {
+            $(".head2 .left2 .a1").html(`您好!${phone4}`);
+            $(".head2 .left2 .a1").attr("href", "#");
+            $(".left2 .a3").html("退出");
+
+            $(".left2 .a3").click(function name(params) {
+                window.sessionStorage.removeItem("phone")
+                window.location.reload();
+            })
+        }
     </script>
 </body>
 

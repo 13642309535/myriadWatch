@@ -8555,7 +8555,7 @@ h3.title span {
 #login .article .login-form .login-main-content .other-login dd a {
     vertical-align: top;
     display: inline-block;
-    background: url(../src/login_icons.png) no-repeat;
+    /* background: url(../src/login_icons.png) no-repeat; */
     width: 32px;
     height: 32px;
     margin-right: 15px
