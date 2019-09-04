@@ -678,7 +678,7 @@
 
                             $("div.zoomDiv").css({
                                 top: 403,
-                                left: 43
+                                left: 74
                             });
                             $("div.zoomDiv").width(480);
                             $("div.zoomDiv").height(480);
@@ -969,16 +969,43 @@
                     });
 
                     // 把id和数量存到订单表
+                    let user = "";
+                    let a1Text = $(".head2 .left2 .a1").text();
+
+                    let shop=$(".detailsPage5 .detail1 span").eq(2).text().split(":")[1];
+                    let goodsName=$(".detailsPage5 .right h3").text();
+                    let price=$(".detailsPage5 .price1B .span2").text();
+                    // let imgSrc=$(".detailsPage5 .style1 ul .active img").attr("src");
+                    let imgSrc=$("#thumblist li").eq(0).find("img").attr("src");
+
+
+                    let Version=$(".detailsPage5 .style1 ul .active span").text();
+
+
+
+                    if (a1Text != "请登录") {
+                        user = a1Text;
+                    }
+                    console.log(data_goodid, valInput, user);
+
+
                     $.ajax({
                         type: "POST",
                         dataType: "json",
-                        url: "http://127.0.0.1/myriadWatch/api/detailpage.php",
+                        url: "http://127.0.0.1/myriadWatch/api/addCarDetail.php",
                         data: {
                             "data_goodid": data_goodid,
                             "valInput": valInput,
-                            // "user":user,
+                            "user": user,
+
+                            "shop":shop,
+                            "imgSrc":imgSrc,
+                            "goodsName":goodsName,
+                            "price":price,
+                            "version":Version,
                         },
                         success: response => {
+                            console.log(response);
 
                         }
 

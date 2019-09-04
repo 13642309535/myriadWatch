@@ -202,9 +202,8 @@ class detailPage {
             </div>
 
             <div class="buy clearfloat">
-                <button class="button1 fl">立即购买</button>
+                <a href="http://127.0.0.1/myriadWatch/html/cart.html" class="button1 fl">立即购买</a>
                 <button class="button2 fl">加入购物车</button>
-
                 <div class="phoneBuy fl">
                     <i></i>
                     <span>手机购买</span>

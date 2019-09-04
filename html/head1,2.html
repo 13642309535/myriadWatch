@@ -68,9 +68,10 @@
         })
 
 
-        let phone3 = Cookie.getItem("phone");;
+        let phone3 = Cookie.getItem("phone");
+        
         if (phone3) {
-            $(".head2 .left2 .a1").html(`您好!${phone3}`);
+            $(".head2 .left2 .a1").html(phone3);
             $(".head2 .left2 .a1").attr("href", "#");
             $(".left2 .a3").html("退出");
 
@@ -83,7 +84,7 @@
 
         let phone4 = window.sessionStorage.getItem("phone");
         if (phone4) {
-            $(".head2 .left2 .a1").html(`您好!${phone4}`);
+            $(".head2 .left2 .a1").html(phone4);
             $(".head2 .left2 .a1").attr("href", "#");
             $(".left2 .a3").html("退出");
 
