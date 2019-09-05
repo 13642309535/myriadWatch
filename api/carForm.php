@@ -1,4 +1,5 @@
 <?php
+
 // 连接数据库
 $con = mysqli_connect("127.0.0.1", "root", "", "myriadwatch");
 

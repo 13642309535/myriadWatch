@@ -11,6 +11,8 @@ $imgSrc = isset($_POST['imgSrc']) ? $_POST['imgSrc'] : '';
 $goodsName = isset($_POST['goodsName']) ? $_POST['goodsName'] : '';
 $price = isset($_POST['price']) ? $_POST['price'] : '';
 $version = isset($_POST['version']) ? $_POST['version'] : '';
+$storeNumber = isset($_POST['storeNumber']) ? $_POST['storeNumber'] : '';
+
 
 
 // 调试用
@@ -22,7 +24,7 @@ $result1 = mysqli_query($con,$sql1);
 $total1=$result1->num_rows;
 if($total1==0)
 {
-$sql ="INSERT INTO orderform(`data_goodid`,`goodNum`,`user`,`shop`,`imgSrc`,`goodsName`,`price`,`version`) VALUES('$data_goodid','$valInput','$user','$shop','$imgSrc','$goodsName','$price','$version')";
+$sql ="INSERT INTO orderform(`data_goodid`,`goodNum`,`user`,`shop`,`imgSrc`,`goodsName`,`price`,`version`,`storeNumber`) VALUES('$data_goodid','$valInput','$user','$shop','$imgSrc','$goodsName','$price','$version','$storeNumber')";
 
 $result = mysqli_query($con,$sql);
 }else{

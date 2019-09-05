@@ -74,7 +74,7 @@
     <div class="detailsPage4">
         <div class="content clearfloat">
             <div class="left fl">
-                <a href="/" target="_blank">首页</a>
+                <a href="http://127.0.0.1/myriadWatch/" >首页</a>
                 <a class="arrow">&gt;</a>
                 <a href="/tissot-watches/" target="_blank">天梭</a>
                 <a class="arrow">&gt;</a>
@@ -678,7 +678,7 @@
 
                             $("div.zoomDiv").css({
                                 top: 403,
-                                left: 74
+                                left: 148
                             });
                             $("div.zoomDiv").width(480);
                             $("div.zoomDiv").height(480);
@@ -942,7 +942,9 @@
                         }
                     }(jQuery);
 
+                var offset = $(".aChange").eq(0).offset()
                 $(".buy .button2").click(function (event) {
+
                     //是$(".addcar")这个元素点击促发的 开始动画的位置就是这个元素的位置为起点
                     var addcar = $(this);
                     var img = $(".tb-booth img").attr('src');
@@ -953,8 +955,10 @@
                             top: event.clientY - 60
                         },
                         end: {
-                            left: 1355,
-                            top: 450,
+                            left: 1750,
+                            top: 1200,
+                            // left: offset.left + 10,
+                            // top: offset.top + 10,
                             width: 0,
                             height: 0
                         },
@@ -972,14 +976,14 @@
                     let user = "";
                     let a1Text = $(".head2 .left2 .a1").text();
 
-                    let shop=$(".detailsPage5 .detail1 span").eq(2).text().split(":")[1];
-                    let goodsName=$(".detailsPage5 .right h3").text();
-                    let price=$(".detailsPage5 .price1B .span2").text();
+                    let shop = $(".detailsPage5 .detail1 span").eq(2).text().split(":")[1];
+                    let goodsName = $(".detailsPage5 .right h3").text();
+                    let price = $(".detailsPage5 .price1B .span2").text();
                     // let imgSrc=$(".detailsPage5 .style1 ul .active img").attr("src");
-                    let imgSrc=$("#thumblist li").eq(0).find("img").attr("src");
+                    let imgSrc = $("#thumblist li").eq(0).find("img").attr("src");
 
 
-                    let Version=$(".detailsPage5 .style1 ul .active span").text();
+                    let Version = $(".detailsPage5 .style1 ul .active span").text();
 
 
 
@@ -998,11 +1002,13 @@
                             "valInput": valInput,
                             "user": user,
 
-                            "shop":shop,
-                            "imgSrc":imgSrc,
-                            "goodsName":goodsName,
-                            "price":price,
-                            "version":Version,
+                            "shop": shop,
+                            "imgSrc": imgSrc,
+                            "goodsName": goodsName,
+                            "price": price,
+                            "version": Version,
+                            "storeNumber": storeNumber,
+
                         },
                         success: response => {
                             console.log(response);

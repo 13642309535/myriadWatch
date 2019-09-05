@@ -32,7 +32,7 @@
                 </div>
                 <div class="right2 fr">
                     <span class="line">|</span>
-                    <a href="#" class="car1">购物车</a>
+                    <a href="http://127.0.0.1/myriadWatch/html/cart.html" class="car1">购物车</a>
                     <div class="serverBox ">
                         <a href="#" class="aServer">客户服务</a>
                         <div class="serverInner">
@@ -47,6 +47,7 @@
                         </div>
 
 
+
                     </div>
                     <a href="#">会员福利</a>
                     <span class="line">|</span>
@@ -57,9 +58,11 @@
         </div>
 
 
+
     </div>
 
     <script>
+        // 关掉顶部广告
         $(".close_slider").click(function name(params) {
             $(this).css("display", "none");
             $(".head1 img").css("display", "none");
@@ -69,15 +72,15 @@
 
 
         let phone3 = Cookie.getItem("phone");
-        
         if (phone3) {
             $(".head2 .left2 .a1").html(phone3);
             $(".head2 .left2 .a1").attr("href", "#");
             $(".left2 .a3").html("退出");
 
             $(".left2 .a3").click(function name(params) {
-                Cookie.removeItem("phone");
+                document.cookie = `phone=${phone3}; expires=Thu, 01 Jan 1970 00:00:00 GMT`;
                 window.location.reload();
+
             })
         }
 
