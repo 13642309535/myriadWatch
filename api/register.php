@@ -17,8 +17,10 @@ $db = mysqli_connect("127.0.0.1","root","","myriadwatch");
 $phone = $_REQUEST["phone"];
 $password = $_REQUEST["password"];
 $phone2 =isset($_POST['phone2']) ? $_POST['phone2'] :'';
+$time =isset($_POST['time']) ? $_POST['time'] :'';
 
-$sql = "INSERT INTO `user` (`phone`,`password`,`referrer`) VALUES ( '$phone','$password','$phone2')";
+
+$sql = "INSERT INTO `user` (`phone`,`password`,`phone2`,`time`) VALUES ( '$phone','$password','$phone2','$time')";
 $result = mysqli_query($db, $sql);
 
 // #bool(false)  | bool(true)

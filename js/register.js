@@ -210,8 +210,28 @@ $(function () {
             msg.html("请输入正确的手机号码！");
         } else {
             parent.removeClass("form-group-error");
+            $.ajax({
+                type: "post",
+                url: "http://127.0.0.1/myriadWatch/api/referrer.php",
+                dataType: "json",
+                data: `phone2=${phoneText}`,
+                // dataType: "dataType",
+                success: function (response) {
+
+                    /* 先检查请求的结果，然后做出对应的处理 */
+                    if (response != 0) {
+                        alert("手机号已注册");
+                        $("#phoneID").val("")
+                        setTimeout("$('#phoneID').focus()", 500);
+                    } else {
+                        // alert("手机号可以注册");
+                        console.log("手机号可以注册");
+
+                    }
+                }
+            });
         }
-        console.log(phoneText);
+
     });
 
     // 推荐人
@@ -320,20 +340,21 @@ $(function () {
             passwordAText.length != 0 &&
             passwordBText.length != 0 &&
             imgCodeText.length != 0 &&
-            $(".form-group-error").length == 0 
+            $(".form-group-error").length == 0
         ) {
             passwordAText = hex_md5(passwordAText);
             console.log(passwordAText);
             console.log(phoneText);
             console.log(recommendPhoneText);
 
-
+            let time = new Date();
+            console.log(time);
 
             $.ajax({
                 type: "post",
                 url: "http://127.0.0.1/myriadWatch/api/register.php",
                 dataType: "json",
-                data: `phone=${phoneText}&password=${passwordAText}&phone2=${recommendPhoneText}`,
+                data: `phone=${phoneText}&password=${passwordAText}&phone2=${recommendPhoneText}&time=${time}`,
                 // dataType: "dataType",
                 success: function (response) {
                     console.log(response);
@@ -341,7 +362,8 @@ $(function () {
                     if (response.status == "success") {
                         alert(response.msg);
                         /* 跳转到登录页面 */
-                        window.location.href = "https://pu.wbiao.cn/member"
+                        window.sessionStorage.setItem("phone", phoneText)
+                        window.location.href = "http://127.0.0.1/myriadWatch/"
                     } else {
                         alert(response.msg);
                     }

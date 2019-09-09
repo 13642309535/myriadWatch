@@ -189,6 +189,7 @@ a:hover {
 
 .order_lists .list_con .list_text a {
     color: #3c3c3c;
+    font-size: 12px;
 }
 
 .order_lists .list_con .list_text a:hover {
